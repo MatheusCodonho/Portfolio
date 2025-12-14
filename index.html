@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio de Matheus Codonho</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="logo">Matheus Codonho</div>
+
+            <!-- Ícone do menu hambúrguer -->
+            <div class="hamburguer" id="hamburguer">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Menu de navegação -->
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#conhecimentos">Conhecimentos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Ícone de modo escuro -->
+            <span class="moon-icon"><i class="fas fa-moon"></i></span>
+        </div>
+    </header>
+
+    <br>
+
+    <section id="inicio" class="section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="text-content">
+                    <h1 class="title">Eu sou</h1>
+                    <h1 class="title bold">Desenvolvedor Full-Stack</h1>
+                    <p>Sou um desenvolvedor web e mobile com foco em performance, segurança e escalabilidade.</p>
+                    <a href="Curriculo Matheus Codonho.pdf" download="Curriculo-Matheus_Codonho.pdf">
+                        <button class="download-btn">
+                            <i class="fas fa-file-download"></i> Download CV
+                        </button>
+                    </a>
+                </div>
+                <!-- <div class="image-content">
+                    <div class="image-wrapper">
+                        <img src="imagens/perfil.webp" alt="Foto de Matheus Codonho" class="imagem-perfil">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="conhecimentos" class="section">
+        <div class="container">
+            <h2>Conhecimentos</h2>
+
+            <div class="skills-grid">
+                <img src="imagens/HTML.png" alt="HTML">
+                <img src="imagens/CSS.svg" alt="CSS">
+                <img src="imagens/javascript.png" alt="JavaScript">
+                <img src="imagens/nodejs.webp" alt="Node.js">
+                <img src="imagens/python.png" alt="Python">
+                <img src="imagens/PHP.svg" alt="PHP">
+                <img src="imagens/mysql.png" alt="MySQL">
+                <img src="imagens/angular.png" alt="Angular">
+                <img src="imagens/react.png" alt="React">
+                <img src="imagens/ionic.png" alt="Ionic">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto">
+                    <a href="https://matheuscodonho.github.io/projetoPizzaria/"><img src="imagens/pizza.png" alt="Projeto 1"></a>
+                    <p>Projeto Pizzaria</p>
+                </div>
+                <div class="projeto">
+                    <a href="https://matheuscodonho.github.io/jogoPacMan/"><img src="imagens/pacman.png" alt="Projeto 2"></a>
+                    <p>Jogo Pac-Man</p>
+                </div>
+                <div class="projeto">
+                    <a href="https://matheuscodonho.github.io/projetoCalculadora/"><img src="imagens/calculadora.png" alt="Projeto 3"></a>
+                    <p>Projeto Calculadora</p>
+                </div>
+                <div class="projeto">
+                    <a href="https://matheuscodonho.github.io/CRUD-Simples/"><img src="imagens/CRUD.png" alt="Projeto 4"></a>
+                    <p>CRUD Simples</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="form-contato">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
